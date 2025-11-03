@@ -1,0 +1,37 @@
+:root {
+    --background-color: antiquewhite;
+    --background-color-w: rgb(255, 253, 251);
+    --border-color: burlywood;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+body {
+    font-family: 'Courier New', monospace;;
+}
+
+.crumbs{
+    position: absolute;
+
+    top:-15px;
+    left: -15px;
+    background-color: var(--background-color);
+    border-bottom: solid var(--border-color) 5px;
+    border-right: solid var(--border-color) 5px;
+    border-radius: 20px;
+
+    padding-right: 25px;
+    padding-top: 10px;
+
+    display: flex;
+
+}
+.crumb {
+    list-style-type: none;
+    display: inline;
+}

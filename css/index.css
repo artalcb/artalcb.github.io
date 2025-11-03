@@ -1,0 +1,80 @@
+
+
+
+body {
+    background: 
+    linear-gradient(rgba(255, 255, 255, 0.3)), /* white overlay */
+    url('../img/lab.webp');
+    background-size: cover;
+    display: flex;
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+
+}
+
+.starters {
+    min-height:100px;
+    min-width: 290px;
+    width: 72vmin;
+    height: 25vmin;
+    background-color: var(--background-color);
+    border-radius: 20px;
+    border: solid var(--border-color) 5px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+.starter {
+    
+    width: 20vmin;
+    height: 20vmin;
+    min-width: 80px;
+    min-height: 80px;
+    background-color: var(--background-color-w);
+    border-radius: 20px;
+    border: solid var(--border-color) 5px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1vmin;
+  
+}
+
+
+.starters a:nth-child(1) .starter:hover  {
+    background-color: rgb(183, 243, 183);
+    border-color: green;
+}
+
+.starters a:nth-child(2) .starter:hover  {
+    background-color: rgb(218, 139, 139);
+    border-color: red;
+}
+.starters a:nth-child(3) .starter:hover  {
+    background-color: rgb(133, 133, 214);
+    border-color: blue;
+}
+
+
+.starter img {
+    width:8vmin;
+    min-width: 40px;
+
+}
+
+.titleIndex {
+    position: fixed;
+    top:10%;
+    
+    
+}
+
+@media (max-width: 1000px) or (max-height: 700px) {
+  .titleIndex {
+    display: none;
+  }
+}

@@ -1,0 +1,15 @@
+
+
+body {
+
+    background: 
+        linear-gradient(rgba(218, 139, 139, 0.4)), /* red overlay */
+    url('../img/tierraquemada1.webp') no-repeat center center;
+
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center; 
+
+}
