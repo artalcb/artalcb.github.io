@@ -45,16 +45,16 @@ body {
 }
 
 
-.starters a:nth-child(1) .starter:hover  {
+.treecko:hover  {
     background-color: rgb(183, 243, 183);
     border-color: green;
 }
 
-.starters a:nth-child(2) .starter:hover  {
+.torchic:hover  {
     background-color: rgb(218, 139, 139);
     border-color: red;
 }
-.starters a:nth-child(3) .starter:hover  {
+.mudkip:hover  {
     background-color: rgb(133, 133, 214);
     border-color: blue;
 }
@@ -77,4 +77,28 @@ body {
   .titleIndex {
     display: none;
   }
+}
+
+.torchic, .treecko, .mudkip {
+    cursor: url("../img/pokeball.cur"), auto;}
+
+.pokethrow {
+  position: fixed;
+  
+  top: 50%;    /* start roughly center */
+  left: 0;
+  transform: translate(0, -50%) scale(0.5);
+  animation: flyAcross 0.5s linear forwards;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+
+
+@keyframes flyAcross {
+  0% { transform:translateX(-10px) translateY(0px) scale(0.6) rotate(0deg); }
+  25% { transform:translateX(10px) translateY(-40px) scale(0.5) rotate(-90deg); }
+  50% { transform:translateX(30px) translateY(-80px) scale(0.4) rotate(-180deg); }
+  75% { transform:translateX(50px) translateY(-100px) scale(0.3) rotate(-270deg); }
+  100% { transform:translateX(70px) translateY(-80px) scale(0.2) rotate(-360deg);}
 }
