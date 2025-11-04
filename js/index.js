@@ -42,6 +42,7 @@ document.querySelectorAll('.link-js').forEach(link => {
     
     setTimeout(() => {
       window.location.href = link.href;
-    }, 750);
+    }, 850);
   });
+
 });
