@@ -102,3 +102,14 @@ body {
   75% { transform:translateX(50px) translateY(-100px) scale(0.3) rotate(-270deg); }
   100% { transform:translateX(70px) translateY(-80px) scale(0.2) rotate(-360deg);}
 }
+
+.pokestill {
+  position: fixed;
+  transform: scale(0.5);
+  pointer-events: none;
+  z-index:0;
+}
+
+img {
+  z-index: 3;
+}

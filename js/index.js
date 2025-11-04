@@ -29,7 +29,14 @@ document.querySelectorAll('.link-js').forEach(link => {
     
     setTimeout(() => {
       flyingImg.remove(); 
-      starterDiv.querySelector('img').setAttribute('src','img/smoke.gif')
+      starterDiv.querySelector('img').setAttribute('src','img/smoke.gif');
+
+    const staticBall = document.createElement('img');
+    staticBall.src = "img/pokeballpixel.png";
+    staticBall.className = 'pokestill';
+    staticBall.style.left = `${startX-39}px`;
+    staticBall.style.top = `${startY-38}px`;
+    starterDiv.appendChild(staticBall);
 
     }, 500); 
     
